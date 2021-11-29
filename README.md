@@ -1,9 +1,9 @@
 # mousemode
-| Command     | Shortcut            |
-| :---        | :---                |
-| Move Up     | `Shift` + `↑`      |
-| Move Down   | `Shift` + `↓`      |
-| Move Left   | `Shift` + `←`      |
-| Move Right  | `Shift` + `→`      |
-| Click Left  | `LShift` + `RShift` |
-| Click Right | `A` + `S`           |
+| Command            | Shortcut  |
+| :---               | :---      |
+| Move Up            | `P` + `2` |
+| Move Down          | `P` + `3` |
+| Move Left          | `P` + `1` |
+| Move Right         | `P` + `4` |
+| Press Left Button  | `P` + `Q` |
+| Press Right Button | `P` + `W` |

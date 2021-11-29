@@ -1,5 +1,6 @@
 extern crate device_query;
 
+use std::{thread, time};
 use device_query::{DeviceQuery, DeviceState};
 use mouse_rs::{types::keys::Keys, Mouse};
 
@@ -10,37 +11,39 @@ fn main() {
     let mut prev_keys = vec![];
 
     loop {
+        thread::sleep(time::Duration::from_millis(100));
+
         let keys = device_state.get_keys();
         let mouses = device_state.get_mouse();
 
-        if keys.is_empty() { continue; }
+        if keys.is_empty() || keys == prev_keys { continue; }
 
-        if keys != prev_keys && keys.len() == 2 {
+        if keys.len() == 2 {
 
             let keys_0 = keys[0].to_string();
             let keys_1 = keys[1].to_string();
 
-            if keys_0 == "LShift" || keys_0 == "RShift" {
-                if keys_1 == "Up"    { mouse.move_to(mouses.coords.0, mouses.coords.1 - 20).expect("Unable to move mouse"); }
-                if keys_1 == "Down"  { mouse.move_to(mouses.coords.0, mouses.coords.1 + 20).expect("Unable to move mouse"); }
-                if keys_1 == "Left"  { mouse.move_to(mouses.coords.0 - 20, mouses.coords.1).expect("Unable to move mouse"); }
-                if keys_1 == "Right" { mouse.move_to(mouses.coords.0 + 20, mouses.coords.1).expect("Unable to move mouse"); }
-                if keys_1 == "RShift" {
-                    mouse.press(&Keys::RIGHT).expect("Unable to press button");
-                    mouse.release(&Keys::RIGHT).expect("Unable to press button");
-                }
+            //Move Up
+            if keys_0 == "Key2" && keys_1 == "P" { mouse.move_to(mouses.coords.0, mouses.coords.1 - 20).expect("Unable to move mouse"); }
+            //Move Down
+            if keys_0 == "Key3" && keys_1 == "P" { mouse.move_to(mouses.coords.0, mouses.coords.1 + 20).expect("Unable to move mouse"); }
+            //Move Left
+            if keys_0 == "Key1" && keys_1 == "P" { mouse.move_to(mouses.coords.0 - 20, mouses.coords.1).expect("Unable to move mouse"); }
+            //Move Right
+            if keys_0 == "Key4" && keys_1 == "P" { mouse.move_to(mouses.coords.0 + 20, mouses.coords.1).expect("Unable to move mouse"); }
+            //Press Left Button
+            if keys_0 == "Q" && keys_1 == "P" {
+                mouse.press(&Keys::LEFT).expect("Unable to press button");
+                mouse.release(&Keys::LEFT).expect("Unable to press button");
             }
-
-            if keys_0 == "A" {
-                if keys_1 == "S" {
-                    mouse.press(&Keys::LEFT).expect("Unable to press button");
-                    mouse.release(&Keys::LEFT).expect("Unable to press button");
-                }
+            //Press Right Button
+            if keys_0 == "W" && keys_1 == "P" {
+                mouse.press(&Keys::RIGHT).expect("Unable to press button");
+                mouse.release(&Keys::RIGHT).expect("Unable to press button");
             }
-
-            //-- Debug
-            //println!("{:?}", keys)
         }
+        //-- Debug
+        //println!("{:?}", keys);
         prev_keys = keys;
     }
 }
