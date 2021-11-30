@@ -1,8 +1,17 @@
+# The Manifest Format: https://doc.rust-lang.org/cargo/reference/manifest.html
+
 [package]
 name = "mousemode"
 version = "0.1.0"
-authors = ["'ghsable' <'suna@xmpp.is'>"]
+authors = ["'suna' <'suna@xmpp.is'>"]
 edition = "2018"
+description = "mousemode is a daemon that let us to use mouse operations on Keyboard."
+documentation = "https://docs.rs/mousemode/latest/mousemode/"
+readme = "README.md"
+repository = "https://github.com/ghsable/mousemode"
+license-file = "LICENSE"
+keywords = ["mouse", "keyboard-shortcuts"]
+categories = ["accessibility"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
