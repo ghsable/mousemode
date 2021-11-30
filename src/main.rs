@@ -24,12 +24,12 @@ fn main() {
         if keys_0 == "Key1" && keys_1 == "P" { mouse.move_to(mouses.coords.0 - 20, mouses.coords.1).expect("Unable to move mouse"); }
         if keys_0 == "Key4" && keys_1 == "P" { mouse.move_to(mouses.coords.0 + 20, mouses.coords.1).expect("Unable to move mouse"); }
         //Press Left Button
-        if keys_0 == "Q" && keys_1 == "P" {
+        if keys_0 == "W" && keys_1 == "P" {
             mouse.press(&Keys::LEFT).expect("Unable to press button");
             mouse.release(&Keys::LEFT).expect("Unable to press button");
         }
         //Press Right Button
-        if keys_0 == "W" && keys_1 == "P" {
+        if keys_0 == "Q" && keys_1 == "P" {
             mouse.press(&Keys::RIGHT).expect("Unable to press button");
             mouse.release(&Keys::RIGHT).expect("Unable to press button");
         }
