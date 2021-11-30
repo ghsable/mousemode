@@ -1,5 +1,3 @@
-extern crate device_query;
-
 use std::{thread, time};
 use device_query::{DeviceQuery, DeviceState};
 use mouse_rs::{types::keys::Keys, Mouse};
