@@ -1,5 +1,5 @@
 # mousemode
-[mousemode](https://ghsable.github.io/mousemode/): mouse operations == keyboard shortcuts; `//` [🦀](https://www.rust-lang.org/)
+[mousemode](https://crates.io/crates/mousemode): mouse operations == keyboard shortcuts; `//` [🦀](https://www.rust-lang.org/)
 | mouse operation | keyboard shortcut |
 | :--- | :--- |
 | ↑ | `P` + `2` |
@@ -21,13 +21,13 @@
     cargo build --release
     ```
 
-3. Run the [mousemode](https://ghsable.github.io/mousemode/).
+3. Run the [mousemode](https://crates.io/crates/mousemode).
     ```
     ./target/release/mousemode
     ```
 
 ## ...!!XD
-* [mousemode](https://ghsable.github.io/mousemode/) + [vimode](https://ghsable.github.io/vimode/) = `...!!XD`
+* [mousemode](https://crates.io/crates/mousemode) + [vimode](https://ghsable.github.io/vimode/) = `...!!XD`
 
 ## Note: Development
 ### Libraries
