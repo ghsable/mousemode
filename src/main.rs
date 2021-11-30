@@ -1,7 +1,13 @@
+//! Overview
+//!
+//! mousemode is a daemon that let us to use mouse operations on Keyboard.
 use std::{thread, time};
 use device_query::{DeviceQuery, DeviceState};
 use mouse_rs::{types::keys::Keys, Mouse};
 
+/// Entry Point
+///
+/// This function converts a keyboard event to a mouse event.
 fn main() {
     let device_state = DeviceState::new();
     let mouse = Mouse::new();
