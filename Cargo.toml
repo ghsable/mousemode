@@ -12,7 +12,7 @@ homepage = "https://docs.rs/crate/mousemode/latest"
 repository = "https://github.com/ghsable/mousemode"
 license = "GPL-2.0-or-later"
 keywords = ["mouse", "keyboard-shortcuts"]
-categories = ["accessibility"]
+categories = ["hardware-support"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
