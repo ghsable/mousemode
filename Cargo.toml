@@ -10,7 +10,7 @@ documentation = "https://ghsable.github.io/mousemode/mousemode/"
 readme = "README.md"
 homepage = "https://docs.rs/crate/mousemode/latest"
 repository = "https://github.com/ghsable/mousemode"
-license = "MIT"
+license = "GPL-2.0-or-later"
 keywords = ["mouse", "keyboard-shortcuts"]
 categories = ["accessibility"]
 
