@@ -14,7 +14,8 @@
 
     | Linux | Windows | macOS |
     | :--- | :--- | :--- |
-    | [libX11](https://gitlab.freedesktop.org/xorg/lib/libx11) [📝](https://github.com/ostrosco/device_query#dependencies)<br>[libxdo-dev](https://github.com/jordansissel/xdotool) [📝](https://github.com/AltF02/mouse-rs#linux-disclaimer) | `-` | `-` |
+    | [libX11](https://gitlab.freedesktop.org/xorg/lib/libx11) [📝](https://github.com/ostrosco/device_query#dependencies) | `-` | `-` |
+    | [libxdo-dev](https://github.com/jordansissel/xdotool) [📝](https://github.com/AltF02/mouse-rs#linux-disclaimer) | `-` | `-` |
 
 2. Compile the current package.
     ```
