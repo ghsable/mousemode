@@ -16,5 +16,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
+    - name: Build a package's documentation
       run: cargo doc --no-deps
+
+    # peaceiris/actions-gh-pages
+    # https://github.com/peaceiris/actions-gh-pages
+    - name: Deploy gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./target/doc/mousemode
