@@ -43,14 +43,14 @@
 <span id="43">43</span>
 </pre><pre class="rust"><code><span class="doccomment">//! Overview</span>
 <span class="doccomment">//!</span>
-<span class="doccomment">//! mousemode is a daemon that let us to use mouse operations on Keyboard.</span>
+<span class="doccomment">//! mousemode is a daemon that let us to use mouse operations on the Keyboard.</span>
 <span class="kw">use</span> <span class="ident">std</span>::{<span class="ident">thread</span>, <span class="ident">time</span>};
 <span class="kw">use</span> <span class="ident">device_query</span>::{<span class="ident">DeviceQuery</span>, <span class="ident">DeviceState</span>};
 <span class="kw">use</span> <span class="ident">mouse_rs</span>::{<span class="ident">types::keys::Keys</span>, <span class="ident">Mouse</span>};
 
 <span class="doccomment">/// Entry Point</span>
 <span class="doccomment">///</span>
-<span class="doccomment">/// This function converts a keyboard event to a mouse event.</span>
+<span class="doccomment">/// This function converts keyboard events to mouse events.</span>
 <span class="kw">fn</span> <span class="ident">main</span>() {
     <span class="kw">let</span> <span class="ident">device_state</span> <span class="op">=</span> <span class="ident">DeviceState::new</span>();
     <span class="kw">let</span> <span class="ident">mouse</span> <span class="op">=</span> <span class="ident">Mouse::new</span>();
@@ -67,17 +67,17 @@
         <span class="kw">let</span> <span class="ident">keys_0</span> <span class="op">=</span> <span class="ident">keys</span>[<span class="number">0</span>].<span class="ident">to_string</span>();
         <span class="kw">let</span> <span class="ident">keys_1</span> <span class="op">=</span> <span class="ident">keys</span>[<span class="number">1</span>].<span class="ident">to_string</span>();
 
-        <span class="comment">//mouse operation: ↑, ↓, ←, →</span>
+        <span class="comment">// ←, ↑, ↓, →</span>
+        <span class="kw">if</span> <span class="ident">keys_0</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;Key1&quot;</span> <span class="op">&amp;&amp;</span> <span class="ident">keys_1</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;P&quot;</span> { <span class="ident">mouse</span>.<span class="ident">move_to</span>(<span class="ident">mouses</span>.<span class="ident">coords</span>.<span class="number">0</span> <span class="op">-</span> <span class="number">20</span>, <span class="ident">mouses</span>.<span class="ident">coords</span>.<span class="number">1</span>).<span class="ident">expect</span>(<span class="string">&quot;Unable to move mouse&quot;</span>); }
         <span class="kw">if</span> <span class="ident">keys_0</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;Key2&quot;</span> <span class="op">&amp;&amp;</span> <span class="ident">keys_1</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;P&quot;</span> { <span class="ident">mouse</span>.<span class="ident">move_to</span>(<span class="ident">mouses</span>.<span class="ident">coords</span>.<span class="number">0</span>, <span class="ident">mouses</span>.<span class="ident">coords</span>.<span class="number">1</span> <span class="op">-</span> <span class="number">20</span>).<span class="ident">expect</span>(<span class="string">&quot;Unable to move mouse&quot;</span>); }
         <span class="kw">if</span> <span class="ident">keys_0</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;Key3&quot;</span> <span class="op">&amp;&amp;</span> <span class="ident">keys_1</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;P&quot;</span> { <span class="ident">mouse</span>.<span class="ident">move_to</span>(<span class="ident">mouses</span>.<span class="ident">coords</span>.<span class="number">0</span>, <span class="ident">mouses</span>.<span class="ident">coords</span>.<span class="number">1</span> <span class="op">+</span> <span class="number">20</span>).<span class="ident">expect</span>(<span class="string">&quot;Unable to move mouse&quot;</span>); }
-        <span class="kw">if</span> <span class="ident">keys_0</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;Key1&quot;</span> <span class="op">&amp;&amp;</span> <span class="ident">keys_1</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;P&quot;</span> { <span class="ident">mouse</span>.<span class="ident">move_to</span>(<span class="ident">mouses</span>.<span class="ident">coords</span>.<span class="number">0</span> <span class="op">-</span> <span class="number">20</span>, <span class="ident">mouses</span>.<span class="ident">coords</span>.<span class="number">1</span>).<span class="ident">expect</span>(<span class="string">&quot;Unable to move mouse&quot;</span>); }
         <span class="kw">if</span> <span class="ident">keys_0</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;Key4&quot;</span> <span class="op">&amp;&amp;</span> <span class="ident">keys_1</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;P&quot;</span> { <span class="ident">mouse</span>.<span class="ident">move_to</span>(<span class="ident">mouses</span>.<span class="ident">coords</span>.<span class="number">0</span> <span class="op">+</span> <span class="number">20</span>, <span class="ident">mouses</span>.<span class="ident">coords</span>.<span class="number">1</span>).<span class="ident">expect</span>(<span class="string">&quot;Unable to move mouse&quot;</span>); }
-        <span class="comment">//mouse operation: left-click</span>
+        <span class="comment">// left-click</span>
         <span class="kw">if</span> <span class="ident">keys_0</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;W&quot;</span> <span class="op">&amp;&amp;</span> <span class="ident">keys_1</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;P&quot;</span> {
             <span class="ident">mouse</span>.<span class="ident">press</span>(<span class="kw-2">&amp;</span><span class="ident">Keys::LEFT</span>).<span class="ident">expect</span>(<span class="string">&quot;Unable to press button&quot;</span>);
             <span class="ident">mouse</span>.<span class="ident">release</span>(<span class="kw-2">&amp;</span><span class="ident">Keys::LEFT</span>).<span class="ident">expect</span>(<span class="string">&quot;Unable to press button&quot;</span>);
         }
-        <span class="comment">//mouse operation: right-click</span>
+        <span class="comment">// right-click</span>
         <span class="kw">if</span> <span class="ident">keys_0</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;Q&quot;</span> <span class="op">&amp;&amp;</span> <span class="ident">keys_1</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;P&quot;</span> {
             <span class="ident">mouse</span>.<span class="ident">press</span>(<span class="kw-2">&amp;</span><span class="ident">Keys::RIGHT</span>).<span class="ident">expect</span>(<span class="string">&quot;Unable to press button&quot;</span>);
             <span class="ident">mouse</span>.<span class="ident">release</span>(<span class="kw-2">&amp;</span><span class="ident">Keys::RIGHT</span>).<span class="ident">expect</span>(<span class="string">&quot;Unable to press button&quot;</span>);
