@@ -1,5 +1,3 @@
-# The Manifest Format: https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [package]
 name = "mousemode"
 version = "0.1.3"
