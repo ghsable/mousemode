@@ -22,7 +22,7 @@
     cargo build --release
     ```
 
-3. Run the [mousemode](https://crates.io/crates/mousemode).
+3. Run the current package.
     ```
     ./target/release/mousemode
     ```
