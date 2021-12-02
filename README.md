@@ -1,13 +1,13 @@
 # mousemode
-[mousemode](https://crates.io/crates/mousemode): mouse operations == keyboard shortcuts; `//` [🦀](https://www.rust-lang.org/)
-| mouse operation | keyboard shortcut |
+[mousemode](https://crates.io/crates/mousemode): (keyboard.shortcuts) => mouse.operations; `//` [🦀](https://www.rust-lang.org/)
+| keyboard shortcut | mouse operation |
 | :--- | :--- |
-| ↑ | `P` + `2` |
-| ↓ | `P` + `3` |
-| ← | `P` + `1` |
-| → | `P` + `4` |
-| left-click  | `P` + `W` |
-| right-click | `P` + `Q` |
+| `P` + `1` | ← |
+| `P` + `2` | ↑ |
+| `P` + `3` | ↓ |
+| `P` + `4` | → |
+| `P` + `W` | left-click |
+| `P` + `Q` | right-click |
 
 ## Installation
 1. Install **Dependencies**.
@@ -43,4 +43,3 @@
 | :---  | :--- | :--- | :--- |
 | device\_query | [device\_query](https://crates.io/crates/device_query) | [device\_query](https://docs.rs/device_query/latest/device_query/) | [ostrosco/device\_query](https://github.com/ostrosco/device_query) |
 | mouse-rs | [Mouse-rs](https://crates.io/crates/mouse-rs) | [Mouse-rs](https://docs.rs/mouse-rs/latest/mouse_rs/) | [AltF02/mouse-rs](https://github.com/AltF02/mouse-rs) |
-
