@@ -6,8 +6,8 @@
 | `P` + `2` | ↑ |
 | `P` + `3` | ↓ |
 | `P` + `4` | → |
-| `P` + `W` | left-click |
 | `P` + `Q` | right-click |
+| `P` + `W` | left-click |
 
 ## Installation
 1. Install **Dependencies**.
