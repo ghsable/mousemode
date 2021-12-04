@@ -1,4 +1,6 @@
 # mousemode
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fghsable%2Fmousemode.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Fmousemode?ref=badge_shield)
+
 [mousemode](https://crates.io/crates/mousemode): (keyboard.shortcuts) => mouse.operations; `//` [🦀](https://www.rust-lang.org/)
 | keyboard shortcut | mouse operation |
 | :--- | :--- |
@@ -43,3 +45,7 @@
 | :---  | :--- | :--- | :--- |
 | device\_query | [device\_query](https://crates.io/crates/device_query) | [device\_query](https://docs.rs/device_query/latest/device_query/) | [ostrosco/device\_query](https://github.com/ostrosco/device_query) |
 | mouse-rs | [Mouse-rs](https://crates.io/crates/mouse-rs) | [Mouse-rs](https://docs.rs/mouse-rs/latest/mouse_rs/) | [AltF02/mouse-rs](https://github.com/AltF02/mouse-rs) |
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fghsable%2Fmousemode.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Fmousemode?ref=badge_large)
