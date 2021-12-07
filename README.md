@@ -17,14 +17,14 @@
     | [libX11](https://gitlab.freedesktop.org/xorg/lib/libx11) [📝](https://github.com/ostrosco/device_query#dependencies) | `-` | `-` |
     | [libxdo-dev](https://github.com/jordansissel/xdotool) [📝](https://github.com/AltF02/mouse-rs#linux-disclaimer) | `-` | `-` |
 
-2. Compile the current package.
+2. Build and install a Rust binary.
     ```
-    cargo build --release
+    cargo install mousemode
     ```
 
-3. Run the current package.
+3. Run a Rust binary.
     ```
-    ./target/release/mousemode
+    mousemode
     ```
 
 ## ...!!XD
