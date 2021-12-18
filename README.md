@@ -28,7 +28,7 @@
     ```
 
 ## ...!!XD
-* [mousemode](https://crates.io/crates/mousemode) + [vimode](https://ghsable.github.io/vimode/) = `...!!XD`
+* [mousemode](https://crates.io/crates/mousemode) + ([vimode](https://ghsable.github.io/vimode/) + [searchmode](https://ghsable.github.io/searchmode/)) = `...!!XD`
 
 ## Note: Development
 ### Libraries
