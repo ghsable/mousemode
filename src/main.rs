@@ -13,7 +13,7 @@ fn main() {
     let mouse = Mouse::new();
 
     loop {
-        thread::sleep(time::Duration::from_millis(100));
+        thread::sleep(time::Duration::from_millis(105));
 
         let keys_state = device_state.get_keys();
         //println!("{:?}", keys_state);
