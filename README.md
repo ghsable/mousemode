@@ -9,6 +9,9 @@
 | `P` + `Q` | right-click |
 | `P` + `W` | left-click |
 
+## Demo
+[![demo_mousemode.gif](https://raw.githubusercontent.com/ghsable/mousemode/main/.readme/images/demo_mousemode.gif)](https://raw.githubusercontent.com/ghsable/mousemode/main/.readme/images/demo_mousemode.mp4)
+
 ## Installation
 1. Install **Dependencies**.
 
