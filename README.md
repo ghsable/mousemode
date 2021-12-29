@@ -31,7 +31,7 @@
     ```
 
 ## ...!!XD
-* [mousemode](https://crates.io/crates/mousemode) + ([vimode](https://ghsable.github.io/vimode/) + [searchmode](https://ghsable.github.io/searchmode/)) = `...!!XD`
+* [mousemode](https://crates.io/crates/mousemode) + ([vimode](https://ghsable.github.io/vimode/) + [searchmode](https://github.com/ghsable/searchmode)) = `...!!XD`
 
 ## Note: Development
 ### Libraries
