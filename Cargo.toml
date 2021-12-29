@@ -1,6 +1,6 @@
 [package]
 name = "mousemode"
-version = "0.1.7"
+version = "0.1.8"
 authors = ["'suna' <'suna@xmpp.is'>"]
 edition = "2018"
 description = "mousemode is a daemon that let us to use mouse operations on the Keyboard."
